@@ -1,0 +1,23 @@
+
+
+
+sudo scp -r /home/w/_static_html/ root@139.162.19.43:/root/
+
+
+配置uwsgi.ini文件
+3、启动 uwsgi
+
+uwsgi uwsgi.ini
+
+3、启动 uwsgi
+
+uwsgi uwsgi.ini
+4、停止 uwsgi
+
+pkill -f -9 uwsgi
+ 
+先把之前的进程端口kill,再重启
+
+
+uwsgi --http :8888 --wsgi-file JS_profilo.py
+
